@@ -1,0 +1,48 @@
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.box-circle svg {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.box-circle circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke: black;
+    stroke-width: 10;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.box-circle circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: rgb(143, 143, 143);
+}
+
+.box-circle circle:nth-child(2) {
+    transition: stroke-dashoffset 0.8s;
+    stroke: rgb(0, 11, 66);
+}
+
+.box .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
